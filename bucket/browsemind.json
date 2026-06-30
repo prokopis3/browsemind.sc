@@ -4,11 +4,17 @@
     "homepage": "https://github.com/prokopis3/browsemind",
     "license": "AGPL-3.0-or-later",
     "depends": "python",
-    "url": "https://github.com/prokopis3/browsemind/archive/refs/tags/v0.7.0.tar.gz",
+    "suggest": {
+        "Playwright": "playwright"
+    },
+    "url": "https://github.com/prokopis3/browsemind/archive/refs/heads/main.gz",
     "hash": "0000000000000000000000000000000000000000000000000000000000000000",
-    "extract_dir": "browsemind-0.7.0",
+    "pre_install": [
+        "pip install browsemind"
+    ],
     "bin": [
         ["bin/browsemind.js", "browsemind"],
+        ["bin/browsemind.js", "bm"],
         ["bin/browsemind.js", "crwl"]
     ],
     "checkver": {
@@ -20,6 +26,6 @@
     },
     "notes": [
         "Run 'browsemind doctor' to verify installation.",
-        "Set your LLM API key: $env:OPENAI_API_KEY='sk-...'"
+        "Set your LLM API key in llm.env: DEEPSEEK_API_KEY=sk-..."
     ]
 }
