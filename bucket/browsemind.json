@@ -1,0 +1,25 @@
+{
+    "version": "0.5.0",
+    "description": "LLM browser automation agent — crawl, navigate, extract, interact",
+    "homepage": "https://github.com/prokopis3/browsemind",
+    "license": "AGPL-3.0-or-later",
+    "depends": "python",
+    "url": "https://github.com/prokopis3/browsemind/archive/refs/tags/v0.5.0.tar.gz",
+    "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "extract_dir": "browsemind-0.5.0",
+    "bin": [
+        ["bin/browsemind.js", "browsemind"],
+        ["bin/browsemind.js", "crwl"]
+    ],
+    "checkver": {
+        "github": "https://github.com/prokopis3/browsemind"
+    },
+    "autoupdate": {
+        "url": "https://github.com/prokopis3/browsemind/archive/refs/tags/v$version.tar.gz",
+        "extract_dir": "browsemind-$version"
+    },
+    "notes": [
+        "Run 'browsemind doctor' to verify installation.",
+        "Set your LLM API key: $env:OPENAI_API_KEY='sk-...'"
+    ]
+}
