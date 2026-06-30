@@ -8,7 +8,7 @@
         "Playwright": "playwright"
     },
     "url": "https://github.com/prokopis3/browsemind/archive/refs/heads/main.gz",
-    "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "d1740a70281663457944c10b8c4f8cc679595e69",
     "pre_install": [
         "pip install browsemind"
     ],
